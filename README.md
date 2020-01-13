@@ -1,4 +1,4 @@
-# Gerrit – Chat with people nearby!
+# Gerrit – Chat with people nearby! (3rd Bootcamp Project - Week 9)
 
 For our final project as web development students at Ironhack Berlin we created a mobile web application. We decided to build a chat platform with predefined chatrooms that are only open to users in the same approximate geolocation. In other words: It lets you chat to randoms close by.
 
