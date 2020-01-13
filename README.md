@@ -61,11 +61,10 @@ TBD
 
 **Chat:** To enable a real-time chat, a websocket (Socket.io) is used. When a user posts a message, it is stored in the database, together with the geographical origin of its sender. Then, Socket informs all clients, that there is a new message. The clients then query the database for new messages from their same geographical area and get them displayed. Storing the messages in the database allows to display a history of older messages for users the newly enter a chatroom.
 
-## Built With
-
-- [React](https://reactjs.org/) - The web framework used
-- [MongoDB](https://www.mongodb.com/) - Used Database
-- [Node.js](https://nodejs.org/en/) - Our server environmenth 
+## Stack
+**Backend**: Node, Express, MongoDB
+**Frontend**: React (HTML & CSS)
+**Libraries and APIs**: Socket.io, Passport, Mapbox
 
 ## Authors
 
