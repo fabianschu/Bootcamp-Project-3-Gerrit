@@ -27,6 +27,12 @@ npm install --save passport-local passport bcryptjs  express-session
 npm install react-router-dom axios react-map-gl
 ```
 
+### Features
+- Authentication
+- Geographically restrained chatrooms
+- User profiles
+- Interactive Map
+
 ### Testing
 
 To test the code run the following commands:
