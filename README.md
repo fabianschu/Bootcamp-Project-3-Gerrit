@@ -44,22 +44,28 @@ npm start
 ```
 
 ## Features
+TL;DR
 - Authentication
 - Geographically restrained chatrooms
 - User profiles
-- Interactive Map
+- Interactive Mapes.
+
+When a user enters the page, her geolocation is requested. It is then checked, if the user is located in one of six pre-defined geographical quadrants, which cover most of Berlin's Kreuzberg neighbourhood. If the user is outside of these quadrants a message is shown. The user can scroll down to check out an interactive map and her owwn location to see where the next chatroom is located. If the user is located in one of these quadrants, she will be able to enter a chatroom, in which she can chat with everyone else who is in the same quadrant. It is possible to edit the user profile (image and text) and to check out the other users' profiles by clicking on their names in the chatroom.
 
 ### Visual Overview
 TBD
 
 ### Basic technical logic
-TBD
+
+**Geolocation:** To check if a user is located within the geographical boundaries of a chatroom, the browser's geolocation feature is made use of when the App component is mounted. Longitude and latitude are then compared with the cornerpoints of the rectangular spatial areas that represent the chatrooms which are stored in a database (MongoDB). The user's geolocation is updated when it changes.
+
+**Chat:** To enable a real-time chat, a websocket (Socket.io) is used. When a user posts a message, it is stored in the database, together with the geographical origin of its sender. Then, Socket informs all clients, that there is a new message. The clients then query the database for new messages from their same geographical area and get them displayed. Storing the messages in the database allows to display a history of older messages for users the newly enter a chatroom.
 
 ## Built With
 
 - [React](https://reactjs.org/) - The web framework used
 - [MongoDB](https://www.mongodb.com/) - Used Database
-- [Node.js](https://nodejs.org/en/) - Our server environment
+- [Node.js](https://nodejs.org/en/) - Our server environmenth 
 
 ## Authors
 
