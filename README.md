@@ -44,16 +44,25 @@ npm start
 ```
 
 ## Features
-TL;DR
 - Authentication
 - Geographically restrained chatrooms
 - User profiles
-- Interactive Mapes.
+- Interactive Map
 
 When a user enters the page, her geolocation is requested. It is then checked, if the user is located in one of six pre-defined geographical quadrants, which cover most of Berlin's Kreuzberg neighbourhood. If the user is outside of these quadrants a message is shown. The user can scroll down to check out an interactive map and her owwn location to see where the next chatroom is located. If the user is located in one of these quadrants, she will be able to enter a chatroom, in which she can chat with everyone else who is in the same quadrant. It is possible to edit the user profile (image and text) and to check out the other users' profiles by clicking on their names in the chatroom.
 
 ### Visual Overview
-TBD
+**User is outside of the geographical boundaries:**
+![](no-chatroom.gif)
+
+**User is inside of geographical boundaries and uses the chat:**
+![](chat.gif)
+
+**User checks a profile of another user and edits her own profile:**
+![](profile.gif)
+
+**User checks her position on the map:**
+![](map.gif)
 
 ### Basic technical logic
 
