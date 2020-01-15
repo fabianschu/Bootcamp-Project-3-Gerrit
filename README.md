@@ -53,15 +53,19 @@ When a user enters the page, her geolocation is requested. It is then checked, i
 
 ### Visual Overview
 **User is outside of the geographical boundaries:**
+
 ![](no-chatroom.gif)
 
 **User is inside of geographical boundaries and uses the chat:**
+
 ![](chat.gif)
 
 **User checks a profile of another user and edits her own profile:**
+
 ![](profile.gif)
 
 **User checks her position on the map:**
+
 ![](map.gif)
 
 ### Basic technical logic
